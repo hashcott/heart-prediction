@@ -1,5 +1,5 @@
-# Flask Boilerplate
-- Simple and understandable starter kit that can be used as a REST or Flask Web App.
+# Dự đoán bệnh đau tim
+- Một ứng dụng đơn giản giúp bạn dự đoán bệnh đau tim và nguy cơ đột quỵ.
 
 #### Install Process
 ```shell
