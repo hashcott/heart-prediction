@@ -2,4 +2,4 @@ venv/
 .env
 .idea/
 .venv
-test.json
+./test.json

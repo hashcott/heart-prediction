@@ -74,6 +74,26 @@ $(document).ready(() => {
       body: JSON.stringify(data),
     });
     const resData = await res.json();
-    console.log(resData);
+    const myModal = new bootstrap.Modal(document.getElementById("result"), {});
+    if (resData == 1) {
+      $("#bodyResult").html(`
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        Cảnh báo bạn đang có nguy cơ cao bị đau tim (đột quỵ) <br/>
+        Hãy điều chỉnh chế độ sinh hoạt, ăn uống lành mạnh và chăm tập thể dục để có sức khoẻ tốt nhé.
+      </div>
+    </div>`);
+    } else if (resData == 0) {
+      $("#bodyResult").html(`
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+        <div>
+        Bạn đang có một trái tim khoẻ mạnh. <br/>
+        Tuy nhiên bạn vẫn cần phải có chế độ sinh hoạt, ăn uống lành mạnh và chăm tập thể dục để có sức khoẻ tốt nhé.
+        </div>    
+      </div>`);
+    }
+    myModal.show();
   });
 });
