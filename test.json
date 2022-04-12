@@ -1,0 +1,36 @@
+[
+  {
+    "Sex_M": 1,
+    "ChestPainType_ATA": 0,
+    "ChestPainType_NAP": 0,
+    "ChestPainType_TA": 0,
+    "RestingECG_Normal": 1,
+    "RestingECG_ST": 0,
+    "ExerciseAngina": 1,
+    "ST_Slope_Flat": 1,
+    "ST_Slope_Up": 0,
+    "Age": 48,
+    "RestingBP": 138,
+    "Cholesterol": 214,
+    "FastingBS": 0,
+    "MaxHR": 108,
+    "Oldpeak": 1.5
+  },
+  {
+    "Sex_M": 1,
+    "ChestPainType_ATA": 1,
+    "ChestPainType_NAP": 0,
+    "ChestPainType_TA": 0,
+    "RestingECG_Normal": 1,
+    "RestingECG_ST": 0,
+    "ExerciseAngina": 0,
+    "ST_Slope_Flat": 0,
+    "ST_Slope_Up": 1,
+    "Age": 40,
+    "RestingBP": 140,
+    "Cholesterol": 289,
+    "FastingBS": 0,
+    "MaxHR": 172,
+    "Oldpeak": 0
+  }
+]
